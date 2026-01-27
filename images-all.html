@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Image</title>
+  </head>
+  <body>
+    <h1>Welcome to Images</h1>
+    <img src="download.jpg" alt="download.jpg" width="300" height="200">
+    <br>
+    <h4>link in a image</h4>
+    <a href="https://chaicode.com"><img src="download.jpg" alt="download.jpg" width="300" height="200"></a>
+
+
+    <figure>
+      <img src="download.jpg" alt="download.jpg" width="300" height="200">
+      <figcaption>Chaicode theme</figcaption>
+    </figure>
+    
+
+    <!-- for responsive images for differnct display sizes 
+    -->
+    <picture> 
+      <source srcset="Cat.jpg" media="(width >= 300px)">
+      <source srcset="download.jpg" media="(width >= 1200px)">
+      <img src="download.jpg" alt="download">
+    </picture>
+  </body>
+</html>
