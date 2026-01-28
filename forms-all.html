@@ -6,9 +6,11 @@
     <title>Forms practice</title>
 </head>
 <body>
+
+    <h3>challenge-1</h3>
     
-    <form action="#">
-        <label for="fname">Enter the text </label>
+    <form action="#" id="ch_1">
+        <!-- <label for="fname">Enter the text </label> -->
         <input type="text" name="name" id="fname" placeholder="Enter the text">
         <button>submit</button>
     </form>
@@ -16,14 +18,18 @@
     <br>
     <br>
 
+    <h3>challenge-2</h3>
 
-     <form action="#">
+     <form action="#" id="ch_2">
         <label for="mail">Enter your email  </label>
         <input type="email" name="name" id="mail" placeholder="Enter the your mail : "> <br>
+
         <label for="pass">Enter your pass:   </label>
         <input type="password" name="name" id="pass" placeholder="Enter your password : "> <br>
+        
         <label for="num">Enter the ph. number  </label>
-        <input type="number" name="name" id="num" placeholder="Enter a number " minlength="10"> <br>
+        <input type="number" name="name" id="num" placeholder="Enter a number " minlength="10" > <br>
+        
         <label for="date-field">Enter the date  </label>
         <input type="date" name="name" id="date-field"  > <br> <br>
         <button>submit</button>
@@ -32,9 +38,10 @@
 
     <br><br>
 
+    <h3>challenge-3</h3>
 
 
-    <form action="">
+    <form action="" id="ch_3">
 
 
         <label for="fback">enter your feedback: </label> <br> <br>
@@ -42,21 +49,163 @@
     </form>
 
 
+    <h3>challenge-4</h3>
 
 
-    <form action="">
-        <label for="gender">Enter your gender : </label>
-        <input type="radio" name="male" id="gender">
+    <form action="" id="ch_4">
+         
+        <!-- radio input type -->
 
-        <br> 
-        Password : <input type="password" name="pwd"> <br> 
+        <fieldset>
+        <legend>Gender : </legend>
+            <label for="male_val"> 
+                <input type="radio" name="gender" value="male" id="male_val"> Male 
+            </label>
+            <label for="female_val"> 
+                <input type="radio" name="gender" value="female" id="female_val"> Female 
+            </label>
+            <label for="Other_val"> 
+                <input type="radio" name="gender" value="other" id="Other_val"> Other
+            </label>
 
-        <h4>Gender: </h4>
-        <label><input type="radio" name="gender"  value="Male" > Male  </label> <br>
-        <label><input type="radio" name="gender" value="Female"> Female </label> <br>
-        <label><input type="radio" name="gender" value="Other"> Other </label> <br> <br>
+            </fieldset>
+
+            <br> <br>
+
+        <!-- checkbox input type  -->
+        <fieldset>
+                <legend>choose your likes : </legend>
+
+                <label for="reading">
+                    <input type="checkbox" name="" value="reading" id="reading"> Reading 
+                </label>
+
+                
+                <label for="writting">
+                    <input type="checkbox" name="" value="writting" id="writting"> writting 
+                </label>
+
+                
+                <label for="thinking">
+                    <input type="checkbox" name="" value="thinking" id="thinking"> thinking 
+                </label>
+
+        </fieldset>
+            <br> <br>
+
+        <!-- dropdown input type -->
+
+        <label for="work-mode">Choose your work-mode : </label>
+
+        <select name="work-mode" id="work-mode">
+            <option  disabled selected >please select your answer </option>
+            <option value="hybrid">hybrid</option>
+            <option value="in-office">In-office</option>
+            <option value="wfh">work-from-home</option>
+
+
+        </select>
         
     </form>
+
+    <h3>challenge-5</h3>
+
+    <form action="" id="ch-5">
+        <label for="ph_no">Enter your ph. number </label>
+            <input type="tel" name="ph" id="ph_no" placeholder="Example : 1234567897 (don't use +91 ) " maxlength="10" required>
+        <br>
+        <label for="name">Enter your Name </label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name  "  required>
+
+            <br>
+            <button type="button">submit</button>
+
+    </form>
+
+
+    <h3>challenge-6</h3>
+
+    <form action="" id="ch-6">
+            <label for="txt1"> Enter the text : </label>
+            <input type="text" name="txt" id="txt1" maxlength="10">
+
+            <br>
+            <label for="num1"> Enter number : </label>
+            <input type="number" name="num" id="num1" min="10" max="100">
+<br>
+            
+            <label for="mail"> Enter the mail : </label>
+            <input type="email" name="mail" id="mail" pattern="^[A-Ba-b0-9]+@Example\.com">
+<br>
+            <button type="submit">submit</button>
+
+
+    </form>
+
+
+    <h3>challenge-7</h3>
+
+    <form action="" id="ch-7">
+
+        <label for="file-upload">upload a file   </label> <br>
+        <input type="file" accept=".txt ,.html" multiple>
+
+        <br>
+        <button type="submit">submit</button>
+    </form>
+
+
+    <h3>challenge-8</h3>
+
+    <form action="" id="ch-8">
+
+        <label for="dlist"> datalist examples : </label> <br>
+        
+        <input list="dlist-items" >
+
+
+        <datalist id="dlist-items"> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
+
+
+
+        </datalist>
+    </form>
+
+
+
+    <h3>challenge-9</h3>
+
+    <form action="/submit-app" method="post">
+         <label for="dlist"> datalist examples : </label> <br>
+        
+        <input list="dlist-items" >
+
+
+        <datalist id="dlist-items"> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
+
+
+
+        </datalist>
+
+        <button type="submit">submit</button>
+    
+    </form>
+
+
 
 </body>
 </html>
