@@ -205,7 +205,117 @@
     
     </form>
 
+    <h3>challenge-10</h3>
 
+    <form action="/submit" method="get" id="ch_10">
+         <br>
+            <label for="num1"> Enter number : </label>
+            <input type="number" name="num" id="num1" min="10" max="100">
+<br>
+            
+            <label for="mail"> Enter the mail : </label>
+            <input type="email" name="mail" id="mail" pattern="^[A-Ba-b0-9]+@Example\.com" required>    
+<br>
+            
+
+<!-- radio input type -->
+
+        <fieldset>
+        <legend>Gender : </legend>
+            <label for="male_val"> 
+                <input type="radio" name="gender" value="male" id="male_val"> Male 
+            </label>
+            <label for="female_val"> 
+                <input type="radio" name="gender" value="female" id="female_val"> Female 
+            </label>
+            <label for="Other_val"> 
+                <input type="radio" name="gender" value="other" id="Other_val"> Other
+            </label>
+
+            </fieldset>
+
+            <br> <br>
+
+            <fieldset>
+        <legend>Gender : </legend>
+            <label for="male_val"> 
+                <input type="radio" name="gender" value="male" id="male_val"> Male 
+            </label>
+            <label for="female_val"> 
+                <input type="radio" name="gender" value="female" id="female_val"> Female 
+            </label>
+            <label for="Other_val"> 
+                <input type="radio" name="gender" value="other" id="Other_val"> Other
+            </label>
+
+            </fieldset>
+
+            <br> <br>
+
+        <!-- checkbox input type  -->
+        <fieldset>
+                <legend>choose your likes : </legend>
+
+                <label for="reading">
+                    <input type="checkbox" name="" value="reading" id="reading"> Reading 
+                </label>
+
+                
+                <label for="writting">
+                    <input type="checkbox" name="" value="writting" id="writting"> writting 
+                </label>
+
+                
+                <label for="thinking">
+                    <input type="checkbox" name="" value="thinking" id="thinking"> thinking 
+                </label>
+
+        </fieldset>
+    <br>
+
+          <label for="work-mode">Choose your work-mode : </label>
+
+        <select name="work-mode" id="work-mode">
+            <option  disabled selected >please select your answer </option>
+            <option value="hybrid">hybrid</option>
+            <option value="in-office">In-office</option>
+            <option value="wfh">work-from-home</option>
+            </select>
+
+
+            <br>
+
+
+        <label for="fback">enter your feedback: </label> <br> <br>
+        <textarea name="" id="fback" cols="50" rows="10" required></textarea>
+
+            <br>
+
+        <label for="f_upload"> Please upload files: </label>
+        <input type="file" accept=".jpg,.png,.jpeg" required> 
+
+
+
+        <label for="wishlist">select dress from wishlist : </label>
+        <input list="dress-items" >
+
+
+        <datalist id="dress-items">
+            <option value="shirt">shirt</option>
+            <option value="t-shirt">t-shirt</option>
+            <option value="jacket">jacket</option>
+            <option value="trouser">trouser</option>
+            
+        </datalist>
+
+
+
+        <button type="submit">submit</button>
+
+
+    </form>
+
+    
 
 </body>
 </html>
